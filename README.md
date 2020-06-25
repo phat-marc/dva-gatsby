@@ -1,3 +1,15 @@
+![Gatsby Logo](/src/images/gatsby-icon.png)
+
+# How's my picture looking ?
+
+&#1F9D9;
+&#1F609; 
+:smiley:
+:tv:
+☎️
+
+# How's my emoji looking ?
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
