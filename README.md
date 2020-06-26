@@ -1,9 +1,15 @@
-![Gatsby Logo](/src/images/gatsby-icon.png)
+<!-- ![Gatsby Logo](/src/images/gatsby-icon.png) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
 # How's my picture looking ?
-
-&#1F9D9;
-&#1F609; 
+ 
 :smiley:
 :tv:
 ☎️
