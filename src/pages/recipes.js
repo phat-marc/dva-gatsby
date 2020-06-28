@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// Styled components
+// STYLED COMPONENTS
 const BlogLink = styled(Link)`
 text-decoration: none;
 `
@@ -13,7 +13,6 @@ const BlogTitle = styled.h3`
 margin-bottom: 1rem;
 color: blue;
 `
-
 
 export default ({ data }) => {
 	console.log(data)
@@ -24,18 +23,17 @@ export default ({ data }) => {
 	    	<p><strong>WELCOME TO</strong></p>
 		    <h2>Da Vinci Cooking</h2>
 		    <p>This is where you will learn to cook Mediterranean style food at home</p>
-		    <h4>{data.allMarkdownRemark.totalCount}</h4>
+		    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
 		    {data.allMarkdownRemark.edges.map(({ node }) => (
-		    		<div	key={node.id}>
-		    			<BlogLink to={node.fields.slug}>
-			    			<BlogTitle><h3>{node.frontmatter.title}</h3></BlogTitle> 
-			    			<p>{node.frontmatter.date}</p>
-		    			</BlogLink>
-		    			<p>{node.excerpt}</p>
-		    		</div>
-		    	))
-		    }
-	    </div>
+					<div	key={node.id}>
+						<BlogLink to={node.fields.slug}>
+							<BlogTitle>{node.frontmatter.title}</BlogTitle> 
+							<p>{node.frontmatter.date}</p>
+						</BlogLink>
+						<p>{node.excerpt}</p>
+					</div>
+		    ))}
+		  </div>
 	    <Link to="/">Go back to the homepage</Link>
 	  </Layout>
 )}
@@ -51,6 +49,9 @@ query {
           description
           title
         }
+				fields {
+					slug
+				}
         excerpt
       }
     }
