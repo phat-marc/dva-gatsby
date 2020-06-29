@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Da Vinci Artisanal`,
-    description: `DVA test blog`,
+    description: `Homestyle Mediterranean Cuisine`,
+    // keywords: `restaurant, dinner, lunch, italian, pizza, take-aways, sedgefield`,
     author: `me`,
   },
   plugins: [
@@ -27,17 +28,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Da Vinci Artisanal`,
+        short_name: `Da Vinci Artisanal`,
+        description: `Homestyle Mediterranean Cuisine in Sedgefield. Open for lunch and dinner on Wednesday, Friday, and Saturday for lunch`,
         start_url: `/`,
         background_color: `#511151`,
         theme_color: `#511151`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/flag.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
