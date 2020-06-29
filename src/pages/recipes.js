@@ -51,6 +51,9 @@ query {
           description
           title
         }
+				fields {
+					slug
+				}
         excerpt
       }
     }
