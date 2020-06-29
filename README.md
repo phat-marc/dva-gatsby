@@ -5,30 +5,36 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  DVA Blog Site
 </h1>
 
-# How's my picture looking ?
+## Content
+
+<details>
+
+<summary><b>Expand Table of Contents</b></summary>
+
+- [Section 1: Setup](#section-1-setup)
+- [Resources](#resources)
+- [Quick Start](#quick-start)
+- 
+
+</details>
  
-:smiley:
-:tv:
-☎️
+## Resources
 
-# How's my emoji looking ?
+### Colors
 
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+| Name                | Hex     |
+| ------------------- | ------- |
+| Primary Red         | #f4623a |
+| Compl Blue          | #3ACCF4 |
+| Compl Blue          | #3ACCF4 |
+| Compl Blue White 1  | #EBF9FD |
+| Compl Blue White 2  | #D3E0E3 |
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+# How's my emoji looking ? ☎️
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
