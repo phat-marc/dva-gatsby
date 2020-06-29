@@ -14,13 +14,25 @@
 
 <summary><b>Expand Table of Contents</b></summary>
 
-- [Section 1: Setup](#section-1-setup)
+- [To DO](#todo)
 - [Resources](#resources)
 - [Quick Start](#quick-start)
+- [Scratch Pad](#scratch-pad)
 - 
 
 </details>
- 
+
+## To Do
+
+0. Gatsbby Layouts
+1. Hero to share between landing and post pages, and possibly the take aways section
+   1. Background Image is diff between pages
+   2. Titles and content are diff
+   3. Both need a down arrow (scroll down) button
+2. Every Page needs a back to top arrow button
+3. A 3 pic strip
+4. 
+
 ## Resources
 
 ### Colors
@@ -33,8 +45,13 @@
 | Compl Blue White 1  | #EBF9FD |
 | Compl Blue White 2  | #D3E0E3 |
 
-# How's my emoji looking ? ☎️
+## Scratch Pad
 
+
+  <!-- keywords: `restaurant, dinner, lunch, italian, pizza, take-aways, sedgefield`, -->
+
+
+# How's my emoji looking ? ☎️
 
 ## 🚀 Quick start
 
