@@ -15,9 +15,10 @@
 <summary><b>Expand Table of Contents</b></summary>
 
 - [To DO](#todo)
+- [Notes](#notes)
 - [Resources](#resources)
-- [Quick Start](#quick-start)
 - [Scratch Pad](#scratch-pad)
+- [Quick Start](#quick-start)
 - 
 
 </details>
@@ -26,12 +27,14 @@
 
 0. Gatsbby Layouts
 1. Hero to share between landing and post pages, and possibly the take aways section
-   1. Background Image is diff between pages
+   1. Add background Image (is diff between pages)
    2. Titles and content are diff
    3. Both need a down arrow (scroll down) button
 2. Every Page needs a back to top arrow button
 3. A 3 pic strip
-4. 
+
+
+## To Do
 
 ## Resources
 
