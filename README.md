@@ -25,7 +25,12 @@
 
 ## To Do
 
-0. Gatsbby Layouts
+- layout.js
+1. create components for eact type of section, i.e., full width vs auto margin
+2. this way it won't be strange to add in a hero anywhere else that is needed
+
+
+- Hero.js
 1. Hero to share between landing and post pages, and possibly the take aways section
    1. Add background Image (is diff between pages)
    2. Titles and content are diff

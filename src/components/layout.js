@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+// import Hero from "./Hero"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -26,22 +27,29 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      {/*<Hero><div></div></Hero>  my old hero*/}
+
+      {/* the section wrapper will be removed later
+      <section
         style={{
           margin: `0 auto`,
           padding: 16,
           maxWidth: 960,
           minWidth: 360,
-          background: 'url(../img/bg-masthead.jpg)'
         }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://webstorm.app">Mewsby</a>
-        </footer>
-      </div>
+      ></section>*/}
+      <main>{children}</main>      
+      <footer
+        style={{
+          padding: `1rem`,
+          backgroundColor: `#555`,
+          textAlign: `center`,
+          color: `#f8f8ff` 
+        }}>
+        © {new Date().getFullYear()}, Built by
+        {` `}
+        <a href="https://webstorm.app">Mr Mewsby</a>
+      </footer>      
     </>
   )
 }

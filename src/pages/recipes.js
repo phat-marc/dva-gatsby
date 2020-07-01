@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HeroImage from "../components/HeroImage"
 
 // STYLED COMPONENTS
 const BlogLink = styled(Link)`
@@ -18,13 +19,35 @@ export default ({ data }) => {
 	console.log(data)
 	return(
 	  <Layout>
-	    <SEO title="Recipes" />
-	    <div>
-	    	<p><strong>WELCOME TO</strong></p>
-		    <h2>Da Vinci Cooking</h2>
-		    <p>This is where you will learn to cook Mediterranean style food at home</p>
-		    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-		    {data.allMarkdownRemark.edges.map(({ node }) => (
+			<SEO title="Recipes" />
+			<HeroImage
+				title="recipes-hero"
+				fluid={data.hero.childImageSharp.fluid}
+				overlayColor="#04040454">
+			<header style={{
+				display: `flex`,
+        flexDirection: `column`,
+        justifyContent: `center`,
+				margin: `0 auto`,
+				padding: 16,
+				maxWidth: 960,
+				minWidth: 360,
+				height: `100%`
+			}}>
+				<p style={{marginBottom: 0, color: `white` }}><strong>WELCOME TO</strong></p>
+				<h2 style={{ fontSize: `4rem`, color: `white` }}>DA VINCI COOKING</h2>
+				<p style={{ color: `white` }}>This is where you will learn to cook Mediterranean style food at home</p>
+			</header>
+			</HeroImage>
+
+	    <section style={{
+				margin: `0 auto`,
+				padding: 16,
+				maxWidth: 960,
+				minWidth: 360,
+			}}>
+		    <h4>{data.posts.totalCount} Posts</h4>
+		    {data.posts.edges.map(({ node }) => (
 					<div	key={node.id}>
 						<BlogLink to={node.fields.slug}>
 							<BlogTitle>{node.frontmatter.title}</BlogTitle> 
@@ -33,14 +56,15 @@ export default ({ data }) => {
 						<p>{node.excerpt}</p>
 					</div>
 		    ))}
-		  </div>
-	    <Link to="/">Go back to the homepage</Link>
+				<Link to="/">Go back to the homepage</Link>
+		  </section>
+			
 	  </Layout>
 )}
 
 export const query = graphql`
 query {
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC 	}) {
+  posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC 	}) {
     edges {
       node {
         id
@@ -56,5 +80,13 @@ query {
       }
     }
     totalCount
+  },
+	hero: file(relativePath: { eq: "recipes-hero.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
-}`
+`

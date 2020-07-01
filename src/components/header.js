@@ -11,22 +11,35 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        display: `flex`,
+        flexDirection: `row`,
+        alignItems: `flex-end`,
+        justifyContent: `space-between`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+        <Link to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+          }}>{siteTitle}</Link>
       </h1>
+      <div>
+        <Link to="/page-2/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+            margin: `0 1rem`
+          }}>Go to page 2</Link>
+        <Link to="/recipes/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}>Recipes</Link> 
+      </div>
     </div>
   </header>
 )

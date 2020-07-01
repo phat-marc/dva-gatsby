@@ -1,20 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import SEO from "../components/seo"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
+import HeroImage from "../components/HeroImage"
 import Image from "../components/image"
 
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <h2>Homestyle Mediterranean Cuisine</h2>
-    <Img
+    <HeroImage
+      title="hero"
+      fluid={data.hero.childImageSharp.fluid}
+      overlayColor="#04040454"
+    >
+      <h2 style={{ color: "white" }}>Homestyle Mediterranean Cuisine</h2>
+    </HeroImage>
+    {/*<Img
       className="headshot"
-      fixed={data.file.childImageSharp.fixed}
+      fixed={data.mast.childImageSharp.fixed}
       alt="headshot"
-    />
+    />*/}
     <div>
       <hr />
       <table>
@@ -56,10 +63,17 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "bg-masthead.jpg" }) {
+    # mast: file(relativePath: { eq: "bg-masthead.jpg" }) {
+    #   childImageSharp {
+    #     fixed(width: 125, height: 125) {
+    #       ...GatsbyImageSharpFixed
+    #     }
+    #   }
+    # },
+    hero: file(relativePath: { eq: "bg-masthead.jpg" }) {
       childImageSharp {
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
