@@ -1,6 +1,72 @@
-html {
+body, html {
+  margin: 0; padding: 0;
+}
+
+html {  
+  display: flex;
+  justify-content: center;
   /* background-color: lavenderblush; */
   /* background-color: lightgrey; */
   background-color: #EBF9FD;
   /* background-color: #D3E0E3; */
 }
+
+body { 
+  max-width: 1094px;
+}
+
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+
+h1, h2, h3 {
+  font-family: 'Open Sans', 'Oswald', sans-serif;
+}
+p, a, li, th, td {
+  margin: .75rem 0;
+  font-family: 'Merriweather', 'Montserrat', serif;
+}
+
+a {text-decoration: none;}
+strong {font-weight: 700;}
+
+hr {
+  max-width: 3.25rem;
+  border: 2px solid #f4623a;
+}
+
+/*Open Times Table*/
+table {
+  width: 300px;  
+  border-collapse: collapse;
+  background-color: rgba(0,0,0,.25);
+}
+
+th, td {
+  padding: 10px 25px;
+  margin: 0 auto; 
+  
+  text-align: left; 
+  font-size: .8rem;
+}
+
+th {
+  border-bottom:1.5px solid rgba(222,226,230,.4);
+  font-size: .9rem;
+}
+.bb {border-bottom: 1px solid rgba(222,226,230,.4);}
+
+/*Copy number*/
+.tel {
+  color: #f4623a;
+  font-size: 1.75rem; 
+  text-shadow: 0 0 10px rgba(0,0,0,.8);}

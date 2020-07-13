@@ -83,7 +83,7 @@ query {
   },
 	hero: file(relativePath: { eq: "recipes-hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 300) {
+        fluid(maxWidth: 1094) {
           ...GatsbyImageSharpFluid
         }
       }

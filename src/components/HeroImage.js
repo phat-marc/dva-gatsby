@@ -17,9 +17,9 @@ const FakeHeroImage = styled(Img)`
   z-index: -1; 
 
   & > img {
-    object-fit: cover !important;
-    object-position: 0% 0% !important;
-    font-family: "object-fit: cover !important; object-position: 0% 0% !important;";
+    object-fit: cover;
+    object-position: 0% 0%;
+    /* font-family: "object-fit: cover !important; object-position: 0% 0% !important;"; */
   }
 
   @media screen and (max-width: 600px) {
@@ -32,6 +32,7 @@ const Content = styled.div`
   top: 0;
   height: 100%;
   width: 100%;
+  color: white;  
 `;
 
 const HeroImage = ({
